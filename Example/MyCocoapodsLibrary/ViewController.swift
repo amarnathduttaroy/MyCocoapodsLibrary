@@ -18,12 +18,12 @@ class ViewController: UIViewController {
         let log = Logger()
         log.printLog()
         
-        //let frameworkBundle = Bundle(for: Logger.self)
-        //let path = frameworkBundle.path(forResource: "Resources", ofType: "bundle")
-        //let resourcesBundle = Bundle(url: URL(fileURLWithPath: path!))
-        //let image = UIImage(named: "flower.jpg", in: resourcesBundle, compatibleWith: nil)
+        let frameworkBundle = Bundle(for: Logger.self)
+        let path = frameworkBundle.path(forResource: "Resources", ofType: "bundle")
+        let resourcesBundle = Bundle(url: URL(fileURLWithPath: path!))
+        let image = UIImage(named: "flower.jpg", in: resourcesBundle, compatibleWith: nil)
             
-        //print(image)
+        print(image)
     }
 
     override func didReceiveMemoryWarning() {
